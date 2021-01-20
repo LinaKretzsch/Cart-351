@@ -1,0 +1,121 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sketch in Parts</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    <div class="header"><h1>SketchInParts</h1> </div>
+
+    <nav>
+    <ul>
+      <li><button id="myGal" style="background:transparent; border:0;color:grey;font-family: 'Jomolhari', serif;
+      letter-spacing: 8px;font-size: 22; ">Gallery</li>
+
+    </ul>
+    </nav>
+
+  </head>
+
+  <body>
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Gallery</h2>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-footer">
+      <h3></h3>
+    </div>
+      </div>
+    </div>
+
+
+
+
+<div class="flex-container">
+    <div id="canvasDiv">
+
+      <div id="flex-container1">
+
+        <div class="container">
+        <img src="Style/tt1.png" alt=""/></div>
+
+      <div id="canvas1"></div>
+
+      <div class="flex-container1Inner">
+        <div class="flex-containerTools">
+          <input type="color" id="myColor1" class= "myColor">
+            <button value="brush" id="brush1" class="brush">
+            <img src = "pencil.png" width "90" height="50" alt="submit"/></button>
+            <button value="eraser" id="eraser1" class="eraser">
+            <img src = "eraser.png" width "90" height="50" alt="submit"/></button>
+        </div>
+        <input type = "range" id = "myRadius1" min="1" max ="15" value="1.5" class = "slider">
+        <button value="Submit" class= "button" id = "submitButton1">Submit</button>
+      </div>
+    </div> <!-- End of flex-container1: contains canvas1-->
+
+
+    <div id="flex-container2">
+
+      <div class="container">
+      <img src="tt2.png" alt=""/></div>
+
+    <div id="canvas2"></div>
+
+    <div class="flex-container1Inner">
+      <div class="flex-containerTools">
+        <input type="color" id="myColor2" class= "myColor">
+          <button value="brush" id="brush2" class="brush">
+          <img src = "pencil.png" width "90" height="50" alt="submit"/></button>
+          <button value="eraser" id="eraser2" class="eraser">
+          <img src = "eraser.png" width "90" height="50" alt="submit"/></button>
+      </div>
+      <input type = "range" id = "myRadius2" min="1" max ="15" value="1.5" class = "slider">
+      <button value="Submit" class= "button" id = "submitButton2">Submit</button>
+    </div>
+    </div> <!-- End of flex-container2: contains canvas2-->
+
+
+
+  <div id="flex-container3">
+
+    <div class="container">
+    <img src="tt3.png" alt=""/></div>
+
+  <div id="canvas3"></div>
+
+  <div class="flex-container1Inner">
+    <div class="flex-containerTools">
+      <input type="color" id="myColor3" class= "myColor">
+        <button value="brush" id="brush3" class="brush">
+        <img src = "pencil.png" width "90" height="50" alt="submit"/></button>
+        <button value="eraser" id="eraser3" class="eraser">
+        <img src = "eraser.png" width "90" height="50" alt="submit"/></button>
+    </div>
+    <input type = "range" id = "myRadius3" min="1" max ="15" value="1.5" class = "slider">
+    <button value="Submit" class= "button" id = "submitButton3">Submit</button>
+  </div>
+
+  </div> <!-- End of flex-container3: contains canvas3-->
+
+</div> <!-- End of canvasDiv: contains canvas1, canvas2 and canvas3 and background-->
+
+  </div>
+
+<!--
+    <script src="jquery-3.4.1.js"></script> -->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="sketchInPartsScript.js"></script>
+    <script src="https://unpkg.com/konva@4.0.15/konva.min.js"></script>
+
+
+
+  </body>
+</html>
