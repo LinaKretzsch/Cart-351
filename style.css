@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+
+body {
+        margin: 0;
+        padding: 0;
+        background-image: url("bg.jpg");
+        background-repeat: repeat;
+        background-size: contain;
+        overflow: scroll;
+        /* To scroll down to parts of the drawing */
+      }
+
+.header{
+  padding: 5% 35% 5%;
+  height: 10%;
+  justify-content: center;
+  color:rgb(150, 175, 203);
+  font-family: 'Jomolhari', serif;
+  font-size: 30;
+  text-align: center;
+}
+
+ul{
+  /* padding: 0% 20% 0% 15%; */
+  display: flex;
+  text-decoration: none;
+  list-style-type:none;
+  font-size: 25px;
+  justify-content: center;
+
+  /* margin:30px; */
+}
+
+li a, li, myGal{
+  letter-spacing: 5px;
+  color: grey;
+  text-decoration: none;
+}
+
+li a:hover{
+  color: #525461;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.flex-container{
+  padding-top: 0%;
+  padding-bottom: 20%;
+  display:flex;
+  flex-direction: inline-flex;
+  flex-wrap:wrap;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex-container1{
+  display: flex;
+  height: 300px;
+  width: 1000px;
+  flex-direction: row;
+}
+
+#flex-container2{
+  display: flex;
+  height: 300px;
+  width: 1000px;
+  flex-direction: row;
+}
+
+#flex-container3{
+  display: flex;
+  height: 300px;
+  width: 1000px;
+  flex-direction: row;
+}
+
+#flex-container1Inner{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.flex-containerTools{
+  display: flex;
+  flex-direction: row;
+}
+
+p{
+  opacity: 0%;
+  font-family: 'Jomolhari', serif;
+}
+
+
+
+.container{
+background-repeat: no-repeat;
+text-align: justify;
+resize: 10%;
+max-height:400px;
+max-width: 400px;
+}
+
+.container img{
+  max-height:300px;
+  max-width: 300px;
+  position: left top;
+}
+
+
+#canvasDiv{
+  height: 1000px;
+  width: 1100px;
+  background-repeat: no-repeat;
+  background-image: url("CanvasBG.png");
+  background-position: 55% top;
+  /* background-size: 91% 60%;
+  margin-top: 20%; */
+  }
+
+#canvas1{
+  padding-top: 1.5%;
+  padding-left: 9%;
+  padding-right: 20%;
+  width: 450px;
+}
+
+#canvas2{
+  padding-top: 1.5%;
+  padding-left: 9%;
+  padding-right: 20%;
+  width: 450px;
+}
+
+#canvas3{
+  padding-top: 1.5%;
+  padding-left: 9%;
+  padding-right: 20%;
+  width: 450px;
+}
+
+.myColor{
+  -webkit-appearance: none;
+  border: none;
+  height: 45px;
+  width: 45px;
+  opacity: 70%;
+  background:black;
+  border-radius: 5px;
+  border-style:solid;
+  border-width: 0px;
+}
+
+.myColor:hover{
+  opacity: 100%;
+}
+
+.brush{
+  background:transparent;
+  border:0;
+  opacity: 0.8;
+}
+.brush:hover{
+  opacity: 100%;
+}
+.brush:hover{
+  opacity: 100%;
+}
+
+
+.eraser{
+  background:transparent;
+  border:0;
+  opacity: 0.8;
+}
+
+.eraser:hover{
+  opacity: 100%;
+}
+
+.button{
+  -webkit-appearance: none;
+  opacity: 0.8;
+  padding: 2px;
+  position: center;
+  width: 150px;
+  background-color:;
+  text-decoration: none;
+  style: none;
+  color: #8ea2ad;
+  background: white;
+  font-size: 15;
+  font-family: 'Jomolhari', serif;
+  border: 4px;
+  border-radius: 4px;
+  letter-spacing: 2px;
+}
+
+
+
+.button:hover{
+  opacity: 100%;
+  background: #8ea2ad;
+  color: white;
+}
+
+.konvajs-content{
+  background-color: white;
+}
+
+.slider{
+
+  -webkit-appearance: none;
+  appearance: none;
+  background: #8ea2ad;
+  width: 150px;
+  height: 15px;
+  radius: 0px;
+  outline: none;
+  border-radius: 4px;
+  opacity: 0.8;
+  margin-top: 20px;
+
+}
+
+
+.slider:hover {
+  opacity: 1;
+}
