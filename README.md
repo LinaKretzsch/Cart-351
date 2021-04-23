@@ -1,4 +1,4 @@
-##SketchInParts
+# SketchInParts
 
 SketchInParts is a collaborative drawing game which can be played 
 by 3 different users. This project was created in the framework of 
